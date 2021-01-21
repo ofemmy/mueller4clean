@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url("https://howtostartabusinessindubai.com/wp-content/uploads/2020/05/start-cleaning-company-dubai.jpg");
+  background-size: cover;
+  background-position: bottom left;
+  opacity: 0.75;
+}
