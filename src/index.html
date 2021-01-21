@@ -13,6 +13,11 @@
       rel="stylesheet"
       href="./assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- ... -->
     <title>mueller4clean | Welcome to Mueller4Clean</title>
   </head>
@@ -53,7 +58,7 @@
         </div>
         <div class="flex flex-col font-lato">
           <small>Ruf uns an</small>
-          <span>+(49) 123 2345 3456</span>
+          <span>+(49) 171 7021 707</span>
         </div>
       </div>
     </div>
@@ -66,15 +71,15 @@
               <a href="#">Home</a>
             </li>
             <li><a href="#">Über uns</a></li>
-            <li><a href="#">Leistungen</a></li>
+            <li><a href="#leistung">Leistungen</a></li>
             <li><a href="#">Kontakt</a></li>
           </ul>
         </nav>
-        <div id="hero" class="font-montserrat text-white">
+        <div id="hero" class="font-montserrat text-white" data-aos="fade-right">
           <h2 class="text-5xl mb-8">
             Professionelle Reinigungs- <br />
             und Hausmeisterservice <br />
-            im Raum Berlin & Potsdam
+            im Raum Berlin & Potsdam.
           </h2>
           <a
             href="#"
@@ -84,20 +89,7 @@
         </div>
       </div>
     </header>
-    <main class="">
-      <!-- 
-      <section class="py-10">
-        <div class="container mx-auto">
-          <p class="leading-relaxed tracking-wide text-lg">
-            Unsere professionell ausgebildeten Arbeitskräfte verfügen über viel
-            Erfahrungen in diversen Bereichen der Reinigung und stehen Ihnen mit
-            ihrer Arbeitskraft zur Verfügung. Unsere Arbeitskräfte sind mit den
-            neusten und hochwertigsten Produkten ausgestattet um Ihnen die
-            bestmögliche Reinigung zu gewahrleisten.
-          </p>
-        </div>
-      </section>
-       -->
+    <main>
       <section class="w-full h-100 bg-primary flex">
         <div class="left w-1/2 h-full px-20 py-10">
           <p
@@ -119,32 +111,453 @@
             den Wind aus den Segeln nehmen.
           </p>
         </div>
-        <div class="right w-1/2 h-full bg-white px-20 py-10">
+        <div class="w-1/2 h-full bg-white px-20 py-10">
           <ul class="text-lg list-none">
             <li class="py-2">
-              <i class="fas fa-check-circle text-primary leading-loose"></i>
+              <i class="fas fa-tint text-primary leading-loose"></i>
               <span class="ml-2">Reinigung von Einkaufszentren</span>
             </li>
-            <li class="py-4"><i class="fas fa-check-circle text-primary"></i>
-              <span class="ml-2">Büroreinigung</span></li>
-            <li class="py-4">  <i class="fas fa-check-circle text-primary"></i>
-              <span class="ml-2">Schul- und Kitareinigung</span></li>
-            <li class="py-4">  <i class="fas fa-check-circle text-primary"></i>
-              <span class="ml-2">Praxisreinigung und Gewerbereinigung</span></li>
-            <li class="py-4">  <i class="fas fa-check-circle text-primary"></i>
-              <span class="ml-2">Fensterreinigung</span></li>
-            <li class="py-4">  <i class="fas fa-check-circle text-primary"></i>
-              <span class="ml-2">Treppenhausreinigung</span></li>
-            <li class="py-4">  <i class="fas fa-check-circle text-primary"></i>
-              <span class="ml-2">Reinigung von Sanitäranlagen</span></li>
+            <li class="py-4">
+              <i class="fas fa-tint text-primary"></i>
+              <span class="ml-2">Büroreinigung</span>
+            </li>
+            <li class="py-4">
+              <i class="fas fa-tint text-primary"></i>
+              <span class="ml-2">Schul- und Kitareinigung</span>
+            </li>
+            <li class="py-4">
+              <i class="fas fa-tint text-primary"></i>
+              <span class="ml-2">Praxisreinigung und Gewerbereinigung</span>
+            </li>
+            <li class="py-4">
+              <i class="fas fa-tint text-primary"></i>
+              <span class="ml-2">Fensterreinigung</span>
+            </li>
+            <li class="py-4">
+              <i class="fas fa-tint text-primary"></i>
+              <span class="ml-2">Treppenhausreinigung</span>
+            </li>
+            <li class="py-4">
+              <i class="fas fa-tint text-primary"></i>
+              <span class="ml-2">Reinigung von Sanitäranlagen</span>
+            </li>
           </ul>
         </div>
       </section>
+      <section class="bg-gray-100 font-montserrat">
+        <div class="container mx-auto py-6 flex justify-center items-center">
+          <h4 class="text-primary text-xl">
+            Aktuell suchen wir nach Auftraggebern für unser Unternehmen
+          </h4>
+          <a
+            href="#"
+            id=""
+            class="ml-10 p-2 rounded-sm bg-primary text-white text-lg"
+            >Kontaktieren Sie uns</a
+          >
+        </div>
+      </section>
+      <section class="w-full h-100">
+        <div id="carousel">
+          <div
+            class="h-100 bg-cover mr-3"
+            style="
+              background-image: url('./assets/images/mueller4clean-1.jpeg');
+            "
+          ></div>
+          <div
+            class="bg-cover h-100 mr-3"
+            style="
+              background-image: url('./assets/images/mueller4clean-2.jpeg');
+            "
+          ></div>
+          <div
+            class="bg-cover h-100 mr-3"
+            style="
+              background-image: url('./assets/images/mueller4clean-3.jpeg');
+            "
+          ></div>
+          <div
+            class="bg-cover h-100 mr-3"
+            style="
+              background-image: url('./assets/images/mueller4clean-4.jpeg');
+            "
+          ></div>
+          <div
+            class="bg-cover h-100 mr-3"
+            style="
+              background-image: url('./assets/images/mueller4clean-5.jpeg');
+            "
+          ></div>
+          <div
+            class="bg-cover h-100 mr-3"
+            style="
+              background-image: url('./assets/images/mueller4clean-6.jpeg');
+            "
+          ></div>
+          <div
+            class="bg-cover h-100 mr-3"
+            style="
+              background-image: url('./assets/images/mueller4clean-7.jpeg');
+            "
+          ></div>
+        </div>
+      </section>
+      <section class="bg-gray-100" id="leistung">
+        <div class="container mx-auto py-10">
+          <div class="flex justify-center items-center">
+            <h3
+              class="font-montserrat text-xl relative text-center"
+              id="section-heading"
+            >
+              Unsere Leistungen
+            </h3>
+          </div>
+          <div class="flex justify-around items-stretch mt-20">
+            <div
+              class="rounded-lg shadow-lg h-96 bg-white px-6 py-10"
+              id="card"
+            >
+              <h3 class="font-montserrat text-xl relative text-center mb-8">
+                Gebäudereinigung
+              </h3>
+              <ul class="text-lg list-none">
+                <li class="py-4 px-4 flex items-center">
+                  <i class="fas fa-tint text-primary leading-loose"></i>
+                  <span class="ml-4">Treppen fegen, wischen und saugen</span>
+                </li>
+                <li class="py-4 px-4 flex items-center">
+                  <i class="fas fa-tint text-primary leading-loose"></i>
+                  <span class="ml-4">Geländerreinigung</span>
+                </li>
+                <li class="py-4 px-4 flex items-center">
+                  <i class="fas fa-tint text-primary leading-loose"></i>
+                  <span class="ml-4">Briefkästen entstauben und wischen</span>
+                </li>
+                <li class="py-4 px-4 flex items-center">
+                  <i class="fas fa-tint text-primary leading-loose"></i>
+                  <span class="ml-4">Reinigung von Eingangstüren</span>
+                </li>
+                <li class="py-4 px-4 flex items-center">
+                  <i class="fas fa-tint text-primary leading-loose"></i>
+                  <span class="ml-4">Namensschilder austauschen</span>
+                </li>
+                <li class="py-4 px-4 flex items-center">
+                  <i class="fas fa-tint text-primary leading-loose"></i>
+                  <span class="ml-4">Leuchtmittelwechsel</span>
+                </li>
+                <li class="py-4 px-4 flex items-center">
+                  <i class="fas fa-tint text-primary leading-loose"></i>
+                  <span class="ml-4">Kellerreinigung</span>
+                </li>
+                <li class="py-4 px-4 flex items-center">
+                  <i class="fas fa-tint text-primary leading-loose"></i>
+                  <span class="ml-4">Müllstellplätze säubern</span>
+                </li>
+                <li class="py-4 px-4 flex items-center">
+                  <i class="fas fa-tint text-primary leading-loose"></i>
+                  <span class="ml-4">Fahrstuhlreinigung</span>
+                </li>
+                <li class="py-4 px-4 flex items-center">
+                  <i class="fas fa-tint text-primary leading-loose"></i>
+                  <span class="ml-4">Speigelreinigung</span>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="rounded-lg shadow-lg h-96 bg-primary text-white px-6 py-10"
+              id="card"
+            >
+              <h3 class="font-montserrat text-xl relative text-center mb-8">
+                Hausmeisterdienste
+              </h3>
+              <ul class="text-lg list-none">
+                <li class="py-4 px-4 flex items-center">
+                  <i class="fas fa-tint text-primary leading-loose"></i>
+                  <span class="ml-4">Ablesen der Zähler</span>
+                </li>
+                <li class="py-4 px-4 flex items-center">
+                  <i class="fas fa-tint text-primary leading-loose"></i>
+                  <span class="ml-4">Einlass und Kontrolle von Firmen</span>
+                </li>
+                <li class="py-4 px-4 flex items-center">
+                  <i class="fas fa-tint text-primary leading-loose"></i>
+                  <span class="ml-4">Melden von Mängeln</span>
+                </li>
+                <li class="py-4 px-4 flex items-center">
+                  <i class="fas fa-tint text-primary leading-loose"></i>
+                  <span class="ml-4"
+                    >Kontrolle und Auffüllen von Heizungsanlagen</span
+                  >
+                </li>
+                <li class="py-4 px-4 flex items-center">
+                  <i class="fas fa-tint text-primary leading-loose"></i>
+                  <span class="ml-4">Anlagen Winterfest machen</span>
+                </li>
+                <li class="py-4 px-4 flex items-center">
+                  <i class="fas fa-tint text-primary leading-loose"></i>
+                  <span class="ml-4"
+                    >Kleinere Reparatur und Wartungsarbeiten</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-gray-800 pt-8 pb-6">
+        <div class="container mx-auto py-12">
+          <div class="flex flex-wrap justify-center">
+            <div class="w-full lg:w-6/12 px-4">
+              <div
+                class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300"
+              >
+                <div class="flex-auto p-5 lg:p-10">
+                  <h4 class="text-2xl font-semibold">Sie sind interresiert?</h4>
+                  <p class="leading-relaxed mt-1 mb-4 text-gray-600">
+                    Bei weiteren Anliegen und Fragen stehen wir Ihnen gerne zur
+                    Verfügung
+                  </p>
+                  <div class="relative w-full mb-3 mt-8">
+                    <label
+                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                      for="full-name"
+                      >Name</label
+                    ><input
+                      type="text"
+                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                      placeholder="Name"
+                      style="transition: all 0.15s ease 0s"
+                    />
+                  </div>
+                  <div class="relative w-full mb-3">
+                    <label
+                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                      for="email"
+                      >Email</label
+                    ><input
+                      type="email"
+                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                      placeholder="Email"
+                      style="transition: all 0.15s ease 0s"
+                    />
+                  </div>
+                  <div class="relative w-full mb-3">
+                    <label
+                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                      for="message"
+                      >Nachricht</label
+                    ><textarea
+                      rows="4"
+                      cols="80"
+                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                      placeholder="Schreiben Sie eine Nachricht..."
+                    ></textarea>
+                  </div>
+                  <div class="text-center mt-6">
+                    <button
+                      class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                      style="transition: all 0.15s ease 0s"
+                    >
+                      Absenden
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="relative bg-gray-300 pt-8 pb-6">
+      <div
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px; transform: translateZ(0px)"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-gray-300 fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4">
+            <!-- <h4 class="text-3xl font-semibold">Hieruber können Sie uns erreichen</h4> -->
+            <h5 class="text-lg mt-0 mb-2 text-gray-700">
+              Hieruber können Sie uns erreichen:
+            </h5>
+            <div class="mt-4">
+              <ul>
+                <li class="py-2">
+                  <i class="fab fa-whatsapp"></i>
+                  <span class="ml-2">+(49) 171 7021 707</span>
+                </li>
+                <li class="py-2">
+                  <i class="fas fa-fax"></i>
+                  <span class="ml-2">030 86339010</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="flex flex-wrap items-top mb-6">
+              <div class="w-full lg:w-4/12 px-4 ml-auto">
+                <span
+                  class="block uppercase text-gray-600 text-sm font-semibold mb-2"
+                  >Useful Links</span
+                >
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://www.creative-tim.com/presentation"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://blog.creative-tim.com"
+                      >Blog</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://www.github.com/creativetimofficial"
+                      >Github</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://www.creative-tim.com/bootstrap-themes/free"
+                      >Free Products</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="w-full lg:w-4/12 px-4">
+                <span
+                  class="block uppercase text-gray-600 text-sm font-semibold mb-2"
+                  >Other Resources</span
+                >
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md"
+                      >MIT License</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://creative-tim.com/terms"
+                      >Terms &amp; Conditions</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://creative-tim.com/privacy"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://creative-tim.com/contact-us"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-400" />
+        <div
+          class="flex flex-wrap items-center md:justify-between justify-center"
+        >
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div class="text-sm text-gray-600 font-semibold py-1">
+              Copyright © 2019 Tailwind Starter Kit by
+              <a
+                href="https://www.creative-tim.com"
+                class="text-gray-600 hover:text-gray-900"
+                >Creative Tim</a
+              >.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      let slider = tns({
+        container: "#carousel",
+        items: 2.5,
+        autoplay: true,
+        mode: "carousel",
+        slideBy: "page",
+        controls: false,
+        nav: false,
+        autoplayHoverPause: true,
+        autoplayTimeout: 8000,
+        autoplayPosition: "bottom",
+        gutter: 50,
+        autoplayButtonOutput: false,
+      });
+      AOS.init({
+        delay: 200,
+        duration: 1200,
+        once: false,
+      });
+    </script>
   </body>
 </html>
 
 <style>
+  html {
+    scroll-behavior: smooth;
+  }
+  .img-box {
+    background-size: cover;
+  }
+
+  #section-heading::after,
+  #section-heading::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: red;
+    position: absolute;
+  }
+  #section-heading::after {
+    top: 100%;
+    left: 0%;
+    margin-top: 5px;
+  }
+  #section-heading::before {
+    bottom: 100%;
+    right: 0%;
+    margin-bottom: 5px;
+  }
   header {
     /*background-image: url('./assets/images/mueller4clean-hero.jpg');*/
     background-image: linear-gradient(
@@ -174,5 +587,8 @@
     background-color: yellow;
     display: block;
     margin-bottom: 5px;
+  }
+  #card {
+    min-width: 430px;
   }
 </style>
