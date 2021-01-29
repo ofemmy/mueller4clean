@@ -52,20 +52,25 @@
     </header>
     -->
     <!-- TOP BAR  -->
-    <div id="top-bar" class="w-full bg-white">
-      <div class="container mx-auto py-1 flex justify-between items-center">
-        <div id="logo" class="font-montserrat font-extrabold text-lg w-16">
-          <img src="./assets/images/logo.png" alt="mueller4clean logo" />
-        </div>
-        <div class="flex flex-1 justify-end font-lato">
-          <!-- <div class="flex justify-center items-center">
+    <div id="top-bar" class="w-full bg-primary-dark text-white">
+      <div class="container mx-auto py-2">
+        <div class="flex flex-1 justify-between font-lato">
+          <div class="flex justify-center items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4">
+              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+            </svg>
+            <span class="ml-1">Siemensstraße 41, 12247 Berlin</span>
+          </div>
+          <div class="flex justify-center items-center ml-12">
            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor" class="w-4">
              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
            </svg>
            <span class="ml-1">mueller4clean@gmail.com</span>
-          </div> -->
-          <div class="flex justify-center items-center ml-4">
+          </div>
+         
+          
+          <div class="flex justify-center items-center ml-12">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
@@ -82,13 +87,15 @@
       </div>
     </div>
     <header class="bg-gray-400 relative" style="min-height: 95vh">
-      <div class="container mx-auto">
-        <nav class="text-white font-lato uppercase rounded-sm" id="main-nav">
-          <ul class="flex py-5 px-3 items-center justify-between tracking-wide">
+        <nav class="font-lato uppercase rounded-sm bg-gray-100 shadow flex items-center px-6">
+          <div class="container mx-auto flex justify-between">
+          <div class="w-16 flex-shrink-0"><img src="./assets/images/logo.png" alt="" ></div>
+         
+          <ul class="flex flex-1 py-5 px-3 items-center justify-between tracking-wide text-primary-dark ml-20">
             <li class="">
               <a
                 href="#"
-                class="hover:text-gray-900 hover:font-extrabold"
+                class="text-gray-600 hover:text-white hover:bg-primary py-2 px-4 rounded-sm font-medium"
                 style="transition: all 0.15s ease 0s"
                 >Home</a
               >
@@ -96,7 +103,7 @@
             <li>
               <a
                 href="#"
-                class="hover:text-gray-900 hover:font-extrabold"
+                class="text-gray-600 hover:text-white hover:bg-primary py-2 px-4 rounded-sm font-medium"
                 style="transition: all 0.15s ease 0s"
                 >Über uns</a
               >
@@ -104,21 +111,23 @@
             <li>
               <a
                 href="#leistung"
-                class="hover:text-gray-900 hover:font-extrabold"
+                class="text-gray-600 hover:text-white hover:bg-primary py-2 px-4 rounded-sm font-medium"
                 style="transition: all 0.15s ease 0s"
                 >Leistungen</a
               >
             </li>
             <li>
               <a
-                href="#"
-                class="hover:text-gray-900 hover:font-extrabold"
+                href="#kontakt"
+                class="text-gray-600 hover:text-white hover:bg-primary py-2 px-4 rounded-sm font-medium"
                 style="transition: all 0.15s ease 0s"
                 >Kontakt</a
               >
             </li>
           </ul>
+        </div>
         </nav>
+        <div class="container mx-auto">
         <div id="hero" class="font-montserrat text-white" data-aos="fade-right">
           <h2 class="text-5xl mb-8 font-extrabold">
             Professionelle Reinigungs- <br />
@@ -128,7 +137,7 @@
           <div class="inline-flex rounded-md shadow">
             <a
               href="#"
-              class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary-dark tracking-wider font-semibold"
+              class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base  rounded-md text-white bg-primary hover:bg-primary-dark tracking-wider font-semibold"
               style="transition: all 0.15s ease 0s"
             >
               Mehr Erfahren
@@ -365,7 +374,7 @@
           </div>
         </div>
       </section>
-      <section class="bg-gray-800 pt-8 pb-6">
+      <section class="bg-gray-800 pt-8 pb-6" id="kontakt">
         <div class="container mx-auto py-12">
           <div class="flex flex-wrap justify-between">
             <div class="w-1/2 text-gray-100 pt-6">
