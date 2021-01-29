@@ -3,8 +3,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      lato: ["Inter var", "sans-serif"],
-      montserrat: ["Inter var", "system-ui"],
+      sans: ["Inter var", "sans-serif"],
     },
     backgroundColor: (theme) => ({
       ...theme("colors"),
