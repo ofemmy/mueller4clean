@@ -4,7 +4,7 @@
   "description": "Landing Page for mueller4clean",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:css": "npx tailwindcss-cli@latest build ./tailwind.css -o ./src/style.css"
   },
   "repository": {
     "type": "git",
