@@ -391,7 +391,7 @@
           </div>
         </div>
       </section>
-     <!-- This example requires Tailwind CSS v2.0+ -->
+   
 <section class="bg-white overflow-hidden">
   <div class="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
     <svg class="absolute top-0 left-full transform -translate-x-1/2 -translate-y-3/4 lg:left-auto lg:right-full lg:translate-x-2/3 lg:translate-y-1/4" width="404" height="784" fill="none" viewBox="0 0 404 784" aria-hidden="true">
@@ -449,7 +449,7 @@
 
         <div>
           <div class="flex items-center justify-center h-12 w-12 rounded-md bg-primary-light text-white">
-            <!-- Heroicon name: lightning-bolt -->
+            
             <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
@@ -592,6 +592,10 @@
                   <p class="leading-relaxed mt-1 mb-4 text-gray-600">
                     Wir melden uns schnellstmöglich wieder bei Ihnen
                   </p>
+                  <form name="mueller4clean" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <p class="hidden">
+                      <label>Only for spam robots: <input name="bot-field"></label>
+                    </p>
                   <div class="relative w-full mb-3 mt-8">
                     <label
                       class="block uppercase text-gray-700 text-xs font-bold mb-2"
@@ -602,6 +606,7 @@
                       class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
                       placeholder="Name"
                       style="transition: all 0.15s ease 0s"
+                      name="name"
                     />
                   </div>
                   <div class="relative w-full mb-3">
@@ -613,6 +618,7 @@
                       type="email"
                       class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
                       placeholder="Email"
+                      name="email"
                       style="transition: all 0.15s ease 0s"
                     />
                   </div>
@@ -626,6 +632,7 @@
                       cols="80"
                       class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
                       placeholder="Schreiben Sie eine Nachricht..."
+                      name="message"
                     ></textarea>
                   </div>
                   <div class="text-center mt-6">
@@ -637,6 +644,7 @@
                       Absenden
                     </button>
                   </div>
+                </form>
                 </div>
               </div>
             </div>
